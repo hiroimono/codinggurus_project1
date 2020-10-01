@@ -22,11 +22,11 @@ nav .container{
 }
 
 .logo-box{
-    height: 6rem ;
+    height: 7rem ;
   
 }
 .logo {
-    height: 5rem;
+    height: 6rem;
     padding-top: .5rem;
     padding-left: 2rem;
 }
@@ -63,6 +63,20 @@ nav .container{
     position: relative;
     
 }
+
+.port-foto{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+    width: 12rem;
+    height: auto;
+    border-radius: 50%;
+    
+    
+
+}
 .heading {
     /*text-transform: uppercase;*/
     color: white;
@@ -81,6 +95,7 @@ nav .container{
     display: block;
     font-size: 3rem;
     letter-spacing: 1.5rem;
+    padding-top: 5rem;
     padding-bottom: 2rem;
 
 }
