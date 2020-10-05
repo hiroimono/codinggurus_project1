@@ -1,0 +1,175 @@
+
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+section{
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    text-align: center;
+}
+a{
+    list-style-type: none;
+}
+
+nav{
+    width: 100%;
+    background-color: greenyellow;
+    opacity: 0.5;
+    
+}
+nav .container{
+    display: grid;
+    grid-template-columns:30fr 5fr;
+}
+
+.logo-box{
+    height: 7.5rem ;
+  
+}
+.logo {
+    height: 7rem;
+    padding-top: .5rem;
+    padding-left: 2rem;
+}
+
+
+.social-link-group {
+    
+    padding-top: 2.3rem;;
+    font-size: 3rem;
+    line-height: 3rem;
+}
+.social-link-group ul{
+    
+    display: grid;
+    grid-template-columns: repeat(3, .3fr);
+   
+    
+    
+
+}
+.social-link-group li{
+    color: salmon;
+
+    list-style-type: none;
+}
+
+
+
+
+#header{
+    
+    background-image: 
+        linear-gradient(to left bottom,rgba(102, 255, 102, 0.7),rgba(230, 255, 230, 0.7)),
+        url(img-potfolio/explosion-5176090_1920.jpg);
+    height: 95vh;
+    background-size: cover;
+    background-position: top;
+    /*clip-path: polygon(0 0,50% 50%,50% 50%, 0 100%);*/
+    position: relative;
+    
+}
+
+.port-foto{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 12rem;
+    height: auto;
+    border-radius: 50%;
+    
+    
+
+}
+.heading {
+    /*text-transform: uppercase;*/
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    
+
+}
+
+
+
+.heading-main{
+    display: block;
+    font-size: 3rem;
+    letter-spacing: 1.5rem;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+
+}
+
+.heading-sub{
+    display: block;
+    font-size: 1.6rem;
+    letter-spacing: 1.5rem;
+}
+
+#portfolio{
+    
+    background-color:
+    rgba(230, 255, 230, 0.7) ;
+    padding-right: 8rem;
+    padding-left: 8rem;
+}
+.portfolio-images{
+   
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    position: relative;
+   
+}
+.col{
+    position: relative;
+    
+}
+.col img {
+    
+    width: 100%;
+    height: 100%;
+    
+    
+}
+
+.overlay{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    background-color:#EDFFED ;
+    opacity: 0;
+    transition: opacity .8s ease;
+}
+
+.icon{
+    color:rgb(18, 104, 131);
+    font-weight: 900;
+    letter-spacing: .1rem;
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.col:hover .overlay{
+    opacity: 0.8;
+}
